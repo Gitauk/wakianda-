@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAKIANDA | Official Store</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+    background:#0f0f13;
+    color:white;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:rgba(0,0,0,.4);
+    backdrop-filter:blur(12px);
+    z-index:100;
+}
+
+header h1{
+    color:#ff4d6d;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ff4d6d;
+}
+
+.hero{
+    min-height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.7)),
+    url("https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1500&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h2{
+    font-size:65px;
+}
+
+.hero p{
+    margin:20px auto;
+    max-width:700px;
+    font-size:18px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    margin:10px;
+    background:#ff4d6d;
+    color:white;
+    border-radius:50px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    background:#ff1f4f;
+}
+
+section{
+    padding:100px 8%;
+}
+
+.title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+    color:#ff4d6d;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:rgba(255,255,255,.05);
+    border-radius:20px;
+    overflow:hidden;
+    backdrop-filter:blur(12px);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.price{
+    color:#ff4d6d;
+    font-size:22px;
+    font-weight:bold;
+    margin:15px 0;
+}
+
+.ticket{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+    padding:20px;
+    background:rgba(255,255,255,.05);
+    border-radius:15px;
+}
+
+.ticket span{
+    color:#bbb;
+}
+
+.testimonials{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.review{
+    background:rgba(255,255,255,.05);
+    padding:30px;
+    border-radius:20px;
+}
+
+.newsletter{
+    text-align:center;
+}
+
+.newsletter input{
+    width:320px;
+    max-width:100%;
+    padding:15px;
+    border:none;
+    border-radius:40px;
+    margin:15px;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    background:#080808;
+}
+
+@media(max-width:768px){
+
+.hero h2{
+font-size:45px;
+}
+
+.ticket{
+flex-direction:column;
+text-align:center;
+gap:20px;
+}
+
+header{
+padding:20px;
+}
+
+nav{
+display:none;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<header>
+
+<h1>WAKIANDA</h1>
+
+<nav>
+<a href="#shows">Shows</a>
+<a href="checkout.html" class="btn">
+    Buy Tickets
+</a>
+<a href="#merch">Merch</a>
+<a href="#fans">Fans</a>
+<a href="#contact">Newsletter</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h2>WAKIANDA 237</h2>
+
+<p>
+Experience the music live. Grab your tickets before they're gone and
+shop the latest official merchandise.
+</p>
+
+<a href="checkout.html" class="btn">
+    Buy Tickets
+</a>
+<a href="#merch" class="btn">Shop Merch</a>
+
+</div>
+
+</section>
+
+<section id="tickets">
+
+<h2 class="title">Upcoming Shows</h2>
+
+<div class="ticket">
+<div>
+<h3>Nairobi, Kenya</h3>
+<span>August 15, 2026 • KICC Arena</span>
+</div>
+
+<a href="#" class="btn">Buy Ticket</a>
+</div>
+
+<a class="btn buy-ticket" data-event-id="1">
+    Buy Tickets
+</a>
+
+<a href="#" class="btn">Buy Ticket</a>
+</div>
+
+<div class="ticket">
+<div>
+<h3>Dar es Salaam, Tanzania</h3>
+<span>September 5, 2026 • National Stadium</span>
+</div>
+
+<a href="#" class="btn">Buy Ticket</a>
+</div>
+
+</section>
+
+<section id="merch">
+
+<h2 class="title">Official Merchandise</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80">
+
+<div class="card-content">
+
+<h3>Tour T-Shirt</h3>
+
+<p>Premium cotton official tour shirt.</p>
+
+<div class="price">$35</div>
+
+<a href="#" class="btn">Buy Now</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80">
+
+<div class="card-content">
+
+<h3>Signature Sneakers</h3>
+
+<p>Limited edition concert collection.</p>
+
+<div class="price">$120</div>
+
+<a href="#" class="btn">Buy Now</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80">
+
+<div class="card-content">
+
+<h3>Artist Hoodie</h3>
+
+<p>Warm fleece hoodie with embroidered logo.</p>
+
+<div class="price">$65</div>
+
+<a href="#" class="btn">Buy Now</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="fans">
+
+<h2 class="title">What Fans Say</h2>
+
+<div class="testimonials">
+
+<div class="review">
+★★★★★
+<p><br>
+"The best live performance I've ever attended. Worth every penny!"
+</p>
+<br>
+<strong>— Sarah</strong>
+</div>
+
+<div class="review">
+★★★★★
+<p><br>
+"The merch quality is incredible and shipping was super fast."
+</p>
+<br>
+<strong>— Brian</strong>
+</div>
+
+<div class="review">
+★★★★★
+<p><br>
+"Can't wait for the next tour. Amazing experience!"
+</p>
+<br>
+<strong>— Diana</strong>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="newsletter">
+
+<h2 class="title">Join the Fan Club</h2>
+
+<p>Be first to know about new music, exclusive merch and upcoming shows.</p>
+
+<br>
+
+<input type="email" placeholder="Enter your email">
+
+<br>
+
+<a href="#" class="btn">Subscribe</a>
+
+</section>
+
+<footer>
+
+<h3>WAKIANDA OFFICIAL</h3>
+
+<p>© 2026 All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
